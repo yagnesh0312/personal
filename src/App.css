@@ -1,0 +1,140 @@
+:root {
+  --text-color: white;
+  --light-text-color: rgba(255, 255, 255, 0.712);
+  --border-color: rgba(255, 255, 255, 0.29);
+  --background-color: black;
+
+  --primary-color: #747ff2;
+  --primary-light-color: #747ef230;
+  --secondary-color: #f95d7f;
+  --white-color: #fff;
+  --button-color: #252525;
+  --white-light-color: #ffffffbb;
+  --mid-color: #040404;
+}
+* {
+  font-family: "Gilroy ☞";
+  margin: 0px;
+  padding: 0;
+  color: white;
+  /* background-color: black; */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  background-color: var(--background-color);
+  color: rgb(33, 33, 33);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav {
+  display: flex;
+}
+
+.title {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navItem {
+  margin: 20px;
+  list-style-type: none;
+}
+.button {
+  background-color: black;
+  border: 2px solid grey;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+/* Home */
+.home {
+  background-color: var(--background-color);
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+}
+.column {
+  /* background-color: red; */
+  padding: 90px 20px;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.para {
+  font-size: 20px;
+  margin: 0px 20px;
+  color: var(--light-text-color);
+}
+.para2 {
+  
+  font-size: 15px;
+  margin: 5px 20px;
+  color: var(--light-text-color);
+}
+.main-title {
+  font-size: 100px;
+}
+.profile-image {
+  height: 300px;
+  display: inline-block;
+  margin: 90px auto;
+  width: 300px;
+  background-image: url("./assets/profile.png");
+  background-size: cover;
+}
+.main-body {
+    /* background-color: black; */
+    /* background: rgb(2, 0, 36);
+    background-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 96%
+    ); */
+    /* height: 100vh; */
+    /* padding-top: 100px; */
+    background-color: var(--background-color);
+    background-image: radial-gradient(
+        ellipse at bottom,
+        var(--primary-light-color),
+        transparent
+      ),
+      /* radial-gradient(ellipse at bottom, var(--mid-color), transparent), */
+        radial-gradient(ellipse at bottom, var(--mid-color), transparent);
+    background-repeat: no-repeat;
+  }
+.name {
+  background-image: radial-gradient(
+    circle,
+    var(--primary-color),
+    var(--secondary-color),
+    var(--primary-color),
+    var(--secondary-color),
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: name-animation 100ms linear infinite;
+}
+@keyframes name-animation {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+/* .footer {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  text-align: center;
+  padding: 20px;
+} */
+
